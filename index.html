@@ -275,31 +275,95 @@
       }
     }
 
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .contact-form label {
+      font-weight: 650;
+      color: var(--text);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 0.85rem 1rem;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .contact-form textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .contact-form button,
+    .contact-button {
+      display: inline-block;
+      border: 0;
+      border-radius: 999px;
+      padding: 0.85rem 1.2rem;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .contact-form button:hover,
+    .contact-button:hover {
+      text-decoration: none;
+      filter: brightness(0.95);
+    }
+
+    .contact-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
   </style>
 </head>
 <body>
   <header class="container">
     <div class="hero">
-      <div class="eyebrow">Expert in applied AI for real-world data and complex systems</div>
+      <div class="eyebrow">AI/ML Expert · Data Scientist · Lecturer</div>
       <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
         <img src="Forooz.jpeg" alt="Profile photo"
              style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 3px solid #e5e7eb;" />
       </div>
       <h1>Dr. Forooz Shahbazi Avarvand</h1>
-      <p class="lead">Helping organizations turn data into practical, scalable solutions and measurable impact</p>
+      <p class="lead">AI/ML expert with 10+ years of experience developing and deploying data-driven solutions across multiple domains, including natural language processing, industrial signal processing, and sensor-based systems.</p>
       <div class="roles">
-        <span class="pill">AI/ML expert</span>
-        <span class="pill">NLP &amp; LLMs</span>
-        <span class="pill">Industrial signal processing</span>
+        <span class="pill">Lecturer at HSLU</span>
+        <span class="pill">Consultant Data Scientist at Xurce</span>
+        <span class="pill">NLP & LLMs</span>
         <span class="pill">MLOps</span>
       </div>
       <nav>
         <a href="#summary">Summary</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#project">Selected Personal Project with LLMs</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Project</a>
         <a href="#education">Education</a>
-        <a href="#skills">IT and Software Skills</a>
-        <a href="#languages">Language Skills</a>
+        <a href="#skills">Skills</a>
         <a href="#awards">Awards</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -307,88 +371,81 @@
   </header>
 
   <main class="container">
-    
-      
-    </section>
-
     <section id="summary" class="card summary">
       <h2>Summary</h2>
-      <p>AI/ML expert with 10+ years of experience developing and deploying data-driven solutions across multiple domains, including natural language processing, industrial signal processing, and sensor-based systems. Applies a unique blend of AI expertise, strategic thinking, and business understanding to identify and deliver high-impact, real-world solutions across industries.</p>
-      <p>Expert in advising stakeholders on identifying high-value AI use cases, defining data strategies, and maximizing return on investment through practical and scalable implementations. Combines a strong academic foundation with extensive industry and consulting experience in pharma, tech, and manufacturing environments.</p>
-      <p>Specialized in transformer-based Natural Language Processing (NLP) and large language models, while also applying machine learning and statistical modeling to real-world engineering problems such as quality control, anomaly detection, predictive maintenance, and time-series analysis. Proven track record of delivering production-ready solutions, from scalable NLP APIs to real-time systems integrated into industrial pipelines, driving measurable business impact and operational efficiency.</p>
-      <p>Bridges academia and industry through roles as lecturer, module lead, and consultant, translating cutting-edge research into applied solutions while training and mentoring the next generation of AI professionals. Skilled in Python, cloud platforms, and modern MLOps practices. Strong communicator and mentor with professional fluency in English and German.</p>
+      <p>AI/ML expert with 10+ years of experience developing and deploying data-driven solutions across multiple domains, including natural language processing, industrial signal processing, and sensor-based systems. Combines a strong academic foundation with extensive industry and consulting experience in pharma, tech, and manufacturing environments.</p>
+      <p>Specialized in transformer-based NLP and large language models, while also applying machine learning and statistical modeling to real-world engineering problems such as quality control, anomaly detection, predicitive maintenance and time-series analysis. Proven track record of delivering production-ready solutions—from scalable NLP APIs to real-time systems integrated into industrial pipelines—driving measurable business impact and operational efficiency.</p>
+      <p>Experienced in advising stakeholders on identifying high-value AI use cases, defining data strategies, and maximizing return on investment through practical and scalable implementations. Bridges academia and industry through roles as lecturer, module lead, and consultant, translating cutting-edge research into applied solutions while training and mentoring the next generation of AI professionals. Skilled in Python, cloud platforms, and modern MLOps practices. Strong communicator and mentor with professional fluency in English and German.</p>
     </section>
 
     <section id="experience" class="card">
       <h2>Work Experience</h2>
 
       <article class="job">
-        <h3>Data scientist consultant at Loepfe AG, Wetzikon, Switzerland</h3>
-        <div class="meta">2025--now</div>
+        <h3>Data scientist consultant at Loepfe AG</h3>
+        <div class="meta">2025—now</div>
         <ul>
-          <li>Improved reliability of production processes through designing and implementing signal processing and Machine Learning(ML) algorithms to automate quality control in textile sensor systems.</li>
-          <li>Collaborated with engineering and production stakeholders to translate operational requirements into robust, scalable solutions and support implementation in live environments on the machines.</li>
-          <li>Optimized existing signal processing methods for optical sensors for quality control and developed novel solutions for unresolved challenges under strict real-time and hardware constraints, enabling deployment directly on production machines.</li>
-          <li>Advised on future ML opportunities by identifying advanced alternative modeling approaches and defining data requirements, enabling the team to increase the precision of the quality control algorithms.</li>
+          <li>Improved reliability of production processes through designing and implementing signal processing and ML algorithms to automate quality control in textile sensor systems,</li>
+          <li>Rapidly acquired domain expertise in optical sensor physics to bridge knowledge gaps between data science and hardware systems, enabling accurate modeling and effective deployment of ML solutions in a previously unfamiliar technical domain</li>
+          <li>Collaborated with engineering and production stakeholders to translate operational requirements into robust, scalable solutions and support implementation in live environments</li>
+          <li>Optimized existing approaches and developed novel solutions for unresolved challenges under strict real-time and hardware constraints, enabling deployment directly on production machines</li>
+          <li>Advised on future ML opportunities by identifying advanced modeling approaches and defining data requirements, enabling the team to unlock additional value from new datasets and guide longer-term AI adoption</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Module Lead &amp; Lecturer at Hochschule Luzern (HSLU, Rotkreuz, Switzerland</h3>
-        <div class="meta">2024--now</div>
+        <h3>Module Lead & Lecturer at HSLU, Rotkreuz, Switzerland</h3>
+        <div class="meta">2024–now</div>
         <ul>
-          <li>Module Lead and Lecturer in MSc Program for MLOps (since Feb 2026)</li>
-          <li>Module Lead and Lecturer in BSc Program for Data Engineering (since Mar 2025): teaching principles of large-scale data processing and ML pipelines: Identified a critical gap in the curriculum and initiated the introduction of a new Data Engineering module, aligning academic training with industry demands. Designed and delivered the module from the ground up, providing students with practical skills in data pipelines, scalable systems, and modern data infrastructure on the cloud.</li>
-          <li>Module Lead &amp; Lecturer in MSc Program for NLP (since Sep 2024): teaching transformers, semantic search, and LLM fine-tuning, etc</li>
-          <li>Supervised MSc and BSc theses in applied Machine Learning (ML) and NLP:
-            <ul>
-              <li>Enabling LLMs to cite their results and provide transparent outputs.</li>
-              <li>Developing and fine-tuning LLM solutions for legal applications.</li>
-            </ul>
-          </li>
-          <li>Deputy Head of AI/ML Bachelor Program (Oct 2024 -- Aug 2025, ad interim)</li>
-          <li>Guest Lecturer and External NLP Expert (May 2024 -- Aug 2024)</li>
-          <li>Established and directed an international module in partnership with academia, Humber Polytechnic, and industry partners, Thomson Reuters and PressnXpress, in Toronto, aligning real-world project design with educational goals and leading full program execution across technical, scientific, and operational domains.</li>
+          <li>Module Lead and Lecturer in the MSc Program for MLOPs at Lucerne University of Applied Sciences and Arts, Lucerne, Switzerland. Feb 2026– now</li>
+          <li>Module Lead and Lecturer in the BSc Program for Data Engineering: March 2025– now</li>
+          <li>Identified a critical gap in the curriculum and initiated the introduction of a new Data Engineering module, aligning academic training with industry demands</li>
+          <li>Designed and delivered the module from the ground up, equipping students with practical skills in data pipelines, scalable systems, and modern data infrastructure on the cloud.</li>
+          <li>Module Lead & Lecturer in MSc for NLP: teaching transformers, semantic search, and LLM fine-tuning. 2024-now</li>
+          <li>Established and directed an international module in partnership with academia and industry in Toronto, aligning real-world project design with educational goals and leading full program execution across technical, scientific, and operational domains.</li>
+          <li>Supervised MSc and BSc theses in applied machine learning and NLP, including:</li>
+          <li>Enabling LLMs to cite their results and provide transparent outputs.</li>
+          <li>Developing and fine-tuning LLM solutions for legal applications.</li>
+          <li>Guest lecturer and external expert for NLP at HSLU, Switzerland. May-September 2024</li>
+          <li>Deputy head of AI and ML bachelor program at HSLU (ad interim). October 2024– August 2025, Feb 2026-July 2026</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Senior Data Scientist at Bayer AG, Language AI, Berlin, Germany.</h3>
-        <div class="meta">2021--2025</div>
+        <h3>Senior Data Scientist at Bayer AG, Language AI, Berlin, Germany</h3>
+        <div class="meta">2021–2025</div>
         <ul>
           <li>Designed and deployed an end-to-end AI-driven platform for insight generation, enabling stakeholders to monitor product trends, evaluate post-launch risks, and make data-informed decisions at scale.</li>
-          <li>Led technical strategy for Generative AI initiativesacting as a bridge between the data science team and the business stakeholders ensuring that business needs are understood and properly translated into the technical language.</li>
-          <li>Accelerated the delivery of high quality insight generation models through mMentoringed junior NLP engineers</li>
+          <li>Led technical strategy for Generative AI initiatives through connecting the data science teams and the business stakeholders and translating the business needs to the technical language.</li>
+          <li>Mentored junior NLP engineers, improving team productivity and accelerating delivery of high-quality models through knowledge sharing and technical guidance</li>
           <li>supervised a master thesis on fine-tuning large language models (LLMs) with in-house proprietary data at Bayer AG.</li>
-          <li>Deployed production-ready NLP models using Docker, FastAPI and cloud infrastructure.</li>
-          <li>Led technical strategy for Generative AI initiatives and mentored junior NLP engineers.</li>
+          <li>Deployed production-ready REST APIs for NLP inference using cloud infrastructure.</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Research Scientist at Alexa AI, Amazon, Berlin, Germany.</h3>
-        <div class="meta">2019--2021</div>
+        <h3>Research Scientist at Alexa AI, Amazon, Berlin, Germany</h3>
+        <div class="meta">2019–2021</div>
         <ul>
-          <li>Key member of a cross-functional team responsible for integrating NLP models at scale into Alexa, ensuring alignment with product requirements and seamless deployment.</li>
-          <li>Built and optimized Natural Language Understanding(NLU) models for multi-task dialogue understanding.</li>
+          <li>Collaborated with cross-functional teams to integrate NLP models at scale into Alexa, ensuring alignment with product requirements and seamless deployment.</li>
+          <li>Built and optimized NLU models for multi-task dialogue understanding.</li>
           <li>Developed error analysis pipelines to identify misclassifications enabling targeted model improvements and increased robustness in production systems.</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Senior Data Scientist at Siemens R&amp;D, Digital Factory and Mobility, Germany.</h3>
-        <div class="meta">2017--2019</div>
+        <h3>Senior Data Scientist at Siemens R&D, Digital Factory and Mobility, Germany</h3>
+        <div class="meta">2017–2019</div>
         <ul>
-          <li>Applied Python (pandas, numpy, scipy) for statistical analysis, feature extraction, and signal processing of sensor data, enabling automated quality assessment.</li>
-          <li>Developed and adapted data analysis scripts to identify anomalies and failure patterns in the production line.</li>
-          <li>Created clear visualizations (matplotlib) and reports to present results to engineers and management, supporting data-driven decision-making.</li>
-          <li>Patent holder: &quot;Anomaly detection in track circuit devices using machine learning&quot; - developed ML-based methods for automated detection of abnormal behavior in railway track circuits, reducing reliance on manual signal inspection.</li>
+          <li>Reduced production costs and improved product quality by developing machine learning solutions for real-time detection of defects in sensor data, enabling automated quality control within manufacturing processes.</li>
+          <li>Created clear visualizations and reports to present results to engineers and management, supporting data-driven decision-making.</li>
+          <li>Patent holder: "Anomaly detection in track circuit devices using machine learning" - developed ML-based methods for automated detection of abnormal behavior in railway track circuits, reducing reliance on manual signal inspection.</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Postdoctoral Researcher, Fraunhofer Heinrich-Hertz Institute (HHI), Berlin, Germany.</h3>
-        <div class="meta">2014--2017</div>
+        <h3>Postdoctoral Researcher, Fraunhofer Heinrich-Hertz Institute (HHI), Berlin, Germany</h3>
+        <div class="meta">2014–2017</div>
         <ul>
           <li>Conducted laboratory EEG measurements and managed large-scale acquisition of multichannel sensor data.</li>
           <li>Applied advanced signal processing and statistical modeling to study brain responses to 3D visual stimuli.</li>
@@ -398,35 +455,33 @@
       </article>
     </section>
 
+    <section id="project" class="card">
+      <h2>Selected Personal Project with LLMs</h2>
+      <p><strong>Tiptoi-to-Farsi Translator (2025):</strong> Designed a fun personal project for my daughter using LLMs to translate Tiptoi pen content and books into Farsi, combining speech processing, NLP translation pipelines, and child-friendly interaction design.</p>
+    </section>
+
     <section id="education" class="card">
       <h2>Education</h2>
       <ul>
-        <li><strong>02.2010--04.2016</strong> PhD in machine learning and signal processing with time series data from EEG sensors at Technische Universitaet Berlin (TU Berlin) and Fraunhofer Institute FIRST and Fraunhofer Institute FOKUS, Berlin, Germany.</li>
-        <li><strong>2007--2009</strong> Master of science in electrical engineering with emphasis on signal processing at Blekinge Institute of Technology, Karlskrona, Sweden.</li>
-        <li><strong>2004-2006</strong> Bachelor of science in electrical engineering (electronics) at Yazd University, Yazd, Iran.</li>
+        <li>PhD in machine learning and signal processing with time series data from EEG sensors at Technische Universitaet Berlin (TU Berlin) and Fraunhofer Institute FIRST and Fraunhofer Institute FOKUS, Berlin, Germany. 02.2010–04.2016</li>
+        <li>Master of science in electrical engineering with emphasis on signal processing at Blekinge Institute of Technology, Karlskrona, Sweden. 2007–2009</li>
+        <li>Bachelor of science in electrical engineering (electronics) at Yazd University, Yazd, Iran. 2004-2006</li>
       </ul>
     </section>
 
-    <section id="project" class="card">
-      <h2>Selected Personal Project with LLMs</h2>
-      <ul>
-        <li><strong>Tiptoi-to-Farsi Translator (2025)</strong>: Designed a fun personal project for my daughter using LLMs to translate Tiptoi pen content and books into Farsi, combining speech processing, NLP translation pipelines, and child-friendly interaction design.</li>
-      </ul>
-    </section>
+    <section id="skills" class="grid">
+      <div class="card">
+        <h2>IT and Software Skills</h2>
+        <p><strong>Libraries and Frameworks:</strong> PyTorch, Huggingface, NLTK, transformers, gensim, Scikit-Learn, pandas, numpy, matplotlib, scipy, Keras, TensorFlow</p>
+        <p><strong>Tools and Platforms:</strong> AWS services, Google Cloud, Docker, FAST API, Steamlit, PostgreSQL, Kubernetes, Git, Linux, Spark,</p>
+        <p><strong>Programming Languages:</strong> Python, SQL, C, C++</p>
+        <p><strong>Data Analytics:</strong> A/B Testing, Experiment Design</p>
+      </div>
 
-    <section id="skills" class="card">
-      <h2>IT and Software Skills</h2>
-      <ul>
-        <li>Libraries and Frameworks: PyTorch, Huggingface, NLTK, transformers, gensim, Scikit-Learn, pandas, numpy, matplotlib, scipy, Keras, TensorFlow</li>
-        <li>Tools and Platforms: AWS services, Google Cloud, Docker, FAST API, Steamlit, PostgreSQL, Kubernetes, Git, Linux, Spark,</li>
-        <li>Programming Languages: Python, SQL, C, C++</li>
-        <li>Data Analytics: A/B Testing, Experiment Design</li>
-      </ul>
-    </section>
-
-    <section id="languages" class="card">
-      <h2>Language Skills</h2>
-      <p>English (Fluent) , German (Fluent), Farsi (Native)</p>
+      <div class="card">
+        <h2>Personal Information</h2>
+        <p><strong>languages</strong> English (Fluent) , German (Fluent), Farsi (Native)</p>
+      </div>
     </section>
 
     <section id="awards" class="card">
@@ -436,6 +491,58 @@
         <li>Biomag Student Fellowship Award (2010)</li>
       </ul>
     </section>
+
+    <section id="contact" class="cta-card">
+      <div>
+        <p class="cta-label">Let’s connect</p>
+        <h2>Open to collaborations in AI, NLP, and applied machine learning.</h2>
+        <p>
+          Feel free to reach out for conversations around Generative AI, LLMs,
+          production ML systems, AI education, or applied data science projects.
+        </p>
+
+        <div class="cta-links">
+          <a href="https://www.linkedin.com/in/dr-forooz-shahbazi-b0759320/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <a class="cta-button" href="https://www.linkedin.com/in/dr-forooz-shahbazi-b0759320/" target="_blank" rel="noopener noreferrer">
+        Connect on LinkedIn
+      </a>
+    </section>
+
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>If you are interested in AI/ML consulting, applied AI projects, workshops, speaking opportunities, or collaboration, let’s connect.</p>
+          <p>You can reach me directly by email:</p>
+          <p><a class="contact-button" href="mailto:forooz.shahbazi@gmail.com?subject=Website%20inquiry">Send me an email</a></p>
+          <p class="contact-note">This form opens your email app and prepares a message to me.</p>
+        </div>
+
+        <form class="contact-form" action="mailto:forooz.shahbazi@gmail.com" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" placeholder="your.email@example.com" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" placeholder="Tell me briefly what you would like to discuss." required></textarea>
+          </div>
+
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="container">
